@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #606f7d;
+    font-family: 'Roboto', sans-serif;;    
+}
+
+body {
+    /* background-image: url(./Imagens/pexels-johannes-plenio-2259232.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+    background: url(./Imagens/pexels-kseniya-lapteva-9175733.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 2px solid #606f7d; */
+    box-shadow: 1px 1px 30px 10px #606f7d;
+    /* border-bottom: 15px ridge #808284; */
+    margin-bottom: 65px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+    border-bottom: 2px dashed #606f7d;
+}
+
+header ul li a:hover{
+    transition: 250ms;
+}
+
+header ul li a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 20px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+    font-size: 35px;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* border: thick double #606f7d; */
+    /* padding: 5px; */
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 5px;
+    background: linear-gradient(to right #ffffff 50%, #606f7d 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #606f7d;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 15px;
+    margin-left: -4px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #ffffff;
+}
+
+@media only screen and (max-width:768px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
+
+
+
+
+
